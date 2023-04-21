@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #C5EBD6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1c6e40;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-idroid: 'idroid', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.8s;
+}
+
+
+header {
+    background: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: var(--cor1);
+}
+
+header h1 {
+    color: #fff;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: #fff;
+    max-width: 600px;
+    padding: 0px 10px;
+    margin: 0px auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.166);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: var(--cor5);
+    border: 1px solid var(--cor5);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-idroid);
+    font-weight: normal;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--cor5);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+main h2 {
+    font-family: var(--fonte-idroid);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+main strong {
+    font-weight: bold;
+    color: var(--cor4);
+
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 4px;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0;
+    border-bottom-style: none;
+
+}
+
+main a::after {
+    content: '🔗';
+    display: inline-block;
+    margin-left: 5px;
+    color: var(--cor6);
+    font-weight: bold;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+}
+
+.video {
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid var(--cor4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--cor4);
+    margin: 0px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid var(--cor4);
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    -ms-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    -o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    -ms-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    -o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid var(--cor4);
+    font-size: 14px;
+}
+
+aside ul {
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid var(--cor4);
+    font-size: 14px;
+    line-height: 20px;
+    background-color: var(--cor4);
+    color: #fff;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    margin: 0px;
+    border-top: 1px solid var(--cor5);
+    border-bottom: 1px solid var(--cor5);
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid var(--cor5);
+    
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
